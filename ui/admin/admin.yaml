@@ -2,7 +2,7 @@ about:
   date: December 23, 2021 16:26:25
   recent_changes: 'Customer/Orders: tab order, label'
   version: 3.50.51
-api_root: http://localhost:5656/api
+api_root: http://localhost:5656/app001/api
 info:
   number_relationships: 11
   number_tables: 15

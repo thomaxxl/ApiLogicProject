@@ -141,12 +141,12 @@ def create_app(config_filename=None):
     with flask_app.app_context():
         db.create_all()
         session.commit()
-        safrs_api = expose_api_models.expose_models(flask_app, HOST=host, PORT=port, API_PREFIX = API_PREFIX)
-        customize_api.expose_services(flask_app, safrs_api, project_dir, HOST=host, PORT=port)    # custom services
+        #safrs_api = expose_api_models.expose_models(flask_app, HOST=host, PORT=port, API_PREFIX = API_PREFIX)
+        #customize_api.expose_services(flask_app, safrs_api, project_dir, HOST=host, PORT=port)    # custom services
         SAFRSBase._s_auto_commit = False
         session.close()
 
-    return flask_app, safrs_api
+    return flask_app, None
 
 
 # address where the api will be hosted, change this if you're not running the app on localhost!
